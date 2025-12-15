@@ -6,8 +6,8 @@ import Body from "./Pages/Body";
 function App() {
   return (
     <div>
-      <Header />
-        <Body />
+      <Header /> 
+      <Body /> 
       <Footer />
     </div>
   );

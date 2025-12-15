@@ -6,24 +6,23 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import BrowseBooks from "./Pages/BrowseBooks.jsx";
 import BookDetails from "./Pages/BookDetails.jsx";
 import Error from "./Pages/Error.jsx";
+import AddBook from "./Pages/AddBook.jsx";
+
 
 const appRoute = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    errorElement: <Error/>
+  { path: "/", 
+    element: <App />, 
+    errorElement: <Error /> 
+  },
+  { path: "/browsebooks", 
+    element: <BrowseBooks /> 
   },
   {
-    path: "/browsebooks",
-    element: <BrowseBooks />,
+  path: "/bookdetails/:id",
+  element: <BookDetails />
   },
-  {
-    path: "/bookdetails",
-    element: <BookDetails />,
-  },
-  {
-    path: "/error",
-    element: <Error />,
+  { path: "/addbook", 
+    element: <AddBook /> 
   },
 ]);
 

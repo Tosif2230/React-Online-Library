@@ -1,11 +1,12 @@
-import React from 'react'
+import ApiCalling from "../components/ApiCalling";
+import Search from "../components/Search";
 
 function BrowseBooks() {
   return (
-    <div>
-      <h1>BrowseBooks</h1>
+    <div className="bg-slate-600">
+      <Search/>
     </div>
-  )
+  );
 }
 
-export default BrowseBooks
+export default BrowseBooks;
