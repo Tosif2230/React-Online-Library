@@ -1,6 +1,6 @@
 import React from "react";
 
-function BookList({ book }) {
+function BookCard({ book }) {
   return (
     
     <section className="m-5 rounded-xl border bg-white shadow-md">
@@ -27,4 +27,4 @@ function BookList({ book }) {
   );
 }
 
-export default BookList;
+export default BookCard;

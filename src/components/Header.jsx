@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Header() {
   return (
@@ -9,8 +10,8 @@ function Header() {
                 <h1>Online Library</h1>
             </div>
             <div className='flex mx-10 list-none text-xl'>
-                <a href=""><li className='mx-10 m-8'>Home</li></a>
-                <a href=""><li className='mx-10 m-8'>Browse Books</li></a>
+                <Link to={"/"}><li className='mx-10 m-8'>Home</li></Link>
+                <Link to={"/browsebooks"}><li className='mx-10 m-8'>Browse Books</li></Link>
                 <button className=' m-6 p-2 rounded-xl bg-blue-400 cursor-pointer'>Add Book</button>
             </div>
         </nav>

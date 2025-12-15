@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import BookList from './BookList'
+import BookCard from './BookCard'
 
 function ApiCalling() {
   const [bookDetails, setBookDetails] = useState([])
@@ -10,7 +10,7 @@ function ApiCalling() {
 
     async function calling() {
       const resp = await axios.get(API)
-    //   console.log(resp.data)
+      console.log(resp.data)
       setBookDetails(resp.data)
     }
 
@@ -20,7 +20,7 @@ function ApiCalling() {
   return (
     <div className="flex flex-wrap justify-center bg-gray-50">
       {bookDetails.map((book) => (
-        <BookList key={book.id} book={book} />
+        <BookCard key={book.id} book={book} />
       ))}
     </div>
   )

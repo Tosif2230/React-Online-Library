@@ -1,6 +1,5 @@
 import React from 'react'
-import BookList from './BookList'
-import ApiCalling from './ApiCalling'
+import ApiCalling from '../components/ApiCalling'
 
 function Body() {
   return (
@@ -25,4 +24,4 @@ function Body() {
   )
 }
 
-export default Body
+export default Body;
