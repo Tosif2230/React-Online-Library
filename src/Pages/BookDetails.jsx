@@ -1,14 +1,15 @@
 import React from 'react'
 
-function BookDetails({book}) {
+function BookDetails({Books}) {
+  
   return (
     <div className="m-5 rounded-xl border bg-white shadow-md">
-          <img className="h-70 w-80 rounded-xl" src={book.imageUrl} alt={book.title}/>
+          <img className="h-70 w-80 rounded-xl" src={Books.imageUrl} alt={Books.title}/>
             <div className="mx-5 my-3">
-                  <h1 className="font-bold text-gray-500"> {book.title} </h1>
-                  <h1 className="font-bold text-gray-500"> {book.author} </h1>
-                  <h2 className="font-bold text-gray-800"> {book.category} </h2>
-                  <h2 className="font-bold text-gray-800"> {book.description} </h2>
+                  <h1 className="font-bold text-gray-500"> {Books.title} </h1>
+                  <h1 className="font-bold text-gray-500"> {Books.author} </h1>
+                  <h2 className="font-bold text-gray-800"> {Books.category} </h2>
+                  <h2 className="font-bold text-gray-800"> {Books.description} </h2>
             </div>
     </div>
   )

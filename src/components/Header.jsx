@@ -12,7 +12,7 @@ function Header() {
             <div className='flex mx-10 list-none text-xl'>
                 <Link to={"/"}><li className='mx-10 m-8 hover:scale-[1.1]'>Home</li></Link>
                 <Link to={"/browsebooks"}><li className='mx-10 m-8 hover:scale-[1.1]'>Browse Books</li></Link>
-                <Link to="/AddBook"><li className=' m-6 p-2 rounded-xl bg-blue-400 cursor-pointer hover:bg-blue-500 hover:scale-[1.1]'>Add Book</li></Link>
+                <Link to={"/AddBook"}><li className=' m-6 p-2 rounded-xl bg-blue-400 cursor-pointer hover:bg-blue-500 hover:scale-[1.1]'>Add Book</li></Link>
             </div>
         </nav>
     </header>
