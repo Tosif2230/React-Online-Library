@@ -1,4 +1,5 @@
-  import { IoSearch } from 'react-icons/io5'
+
+import { IoSearch } from 'react-icons/io5'
 
   function Search() {
     
