@@ -12,8 +12,8 @@ function BookDetails() {
     <div>
       {Book.map((Book) => {
         return (
-          <div className="flex flex-col m-5 rounded-xl border bg-white shadow-md">
-            <img className="h-70 w-80 rounded-xl" src={Book.imageUrl} alt={Book.title}/>
+          <div className="flex flex-col m-5 rounded-xl bg-white">
+            <img className="h-70 w-80 rounded-xl m-2" src={Book.imageUrl} alt={Book.title}/>
             <div className="mx-5 my-3">
               <h1 className="font-bold text-gray-500"> {Book.title} </h1>
               <h1 className="font-bold text-gray-500"> {Book.author} </h1>
