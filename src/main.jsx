@@ -1,19 +1,19 @@
+import React, { lazy } from "react";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import BrowseBooks from "./Pages/BrowseBooks.jsx";
-import BookDetails from "./Pages/BookDetails.jsx";
-import Error from "./Pages/Error.jsx";
-import AddBook from "./Pages/AddBook.jsx";
-import Body from "./Pages/Body.jsx";
 
+const Body = lazy(()=>import ("./Pages/Body.jsx"));
+const BrowseBooks = lazy(()=>import ("./Pages/BrowseBooks.jsx"));
+const BookDetails = lazy(()=>import ("./Pages/BookDetails.jsx"));
+const AddBook = lazy(()=>import ("./Pages/AddBook.jsx"));
+const Error = lazy(()=>import ("./Pages/Error.jsx"));
 
 const appRoute = createBrowserRouter([
   { path: "/", 
     element: <App />, 
-    errorElement: <Error />,
     children: [
       {
         path: "/",
@@ -33,7 +33,8 @@ const appRoute = createBrowserRouter([
       { path: "/addbook", 
         element: <AddBook /> 
       },
-    ]
+    ],
+    errorElement: <Error />,
   },  
 ]);
 

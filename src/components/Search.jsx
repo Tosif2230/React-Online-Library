@@ -6,7 +6,8 @@ import { IoSearch } from 'react-icons/io5'
     const [searchedText,setSearchedText] = useState("")
 
     function handleSearch(){
-      const searchedBook = books.filter((book)=>book.title.toLowerCase().includes(searchedText.toLowerCase()))
+      const searchedBook = books.filter((book)=>book.title.toLowerCase().includes(searchedText.toLowerCase()))||
+    books.author.toLowerCase().includes(searchedText.toLowerCase())
       filterFunction(searchedBook)
     }
     return (
