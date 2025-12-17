@@ -15,10 +15,11 @@ function BookDetails() {
           <div className="flex flex-col m-5 rounded-xl bg-white">
             <img className="h-70 w-80 rounded-xl m-2" src={Book.imageUrl} alt={Book.title}/>
             <div className="mx-5 my-3">
-              <h1 className="font-bold text-gray-500"> {Book.title} </h1>
-              <h1 className="font-bold text-gray-500"> {Book.author} </h1>
-              <h2 className="font-bold text-gray-800"> {Book.category} </h2>
-              <h2 className="font-bold text-gray-800"> {Book.description} </h2>
+              <h1 className="font-bold text-gray-800"> Title: {Book.title} </h1>
+              <h1 className="font-bold text-gray-800"> Author: {Book.author} </h1>
+              <h2 className="font-bold text-gray-500"> Category: {Book.category} </h2>
+              <h2 className="font-bold text-green-700"> Rating: {Book.rating} </h2>
+              <h2 className="font-bold text-gray-900"> Discription: {Book.description} </h2>
             </div>
           </div>
         );
