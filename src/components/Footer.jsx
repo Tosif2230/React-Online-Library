@@ -22,7 +22,11 @@ function Footer() {
         </h2>
       </aside>
 
-      <a href="" className="text-2xl font-bold mx-6">
+      <a
+        href="https://github.com/Tosif2230"
+        target="_blank"
+        className="text-2xl font-bold mx-6"
+      >
         <img
           width="48"
           height="48"
